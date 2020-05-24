@@ -1,0 +1,399 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Athletics IIT Delhi</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <style> 
+ body{background-image:url('https://scontent.fjai2-1.fna.fbcdn.net/v/t1.0-9/s960x960/84627942_2425002444380799_1536616668602564608_o.jpg?_nc_cat=103&_nc_sid=b386c4&_nc_ohc=BgUfMorXxnIAX-O1XZJ&_nc_ht=scontent.fjai2-1.fna&_nc_tp=7&oh=5ae6cfae37f0d19c56d8d98968f4bb5f&oe=5EE84CD1');
+ background-attachment:fixed;
+ background-position:center;
+ background-size:cover;
+ }
+ img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container1 {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 20%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+ .row.content {height: 450px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+	/* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+ footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+	.bgimg-1, .bgimg-2, .bgimg-3 {
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bgimg-1 {
+  background-image: url("http://bsa-iitd.in/static/sports/athletics/Athletics%20family.jpg");
+  min-height: 400px;
+}
+
+.bgimg-2 {
+  background-image: url("http://bsa-iitd.in/static/sports/athletics/FB_IMG_1500289201188.jpg");
+  min-height: 400px;
+}
+
+.bgimg-3 {
+  background-image: url("http://bsa-iitd.in/static/sports/athletics/FB_IMG_1500289058251.jpg");
+  min-height: 400px;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+  }
+}
+	
+	
+</style>
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top" >
+  <div class="container-fluid" >
+    <div class="navbar-header" >
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button> 
+	  <img  class="img-responsive" src="http://bsa-iitd.in/static/headers_and_logos/Athletics.png"  width="100px" height="100px" style="border-radius:50% padding-left:20px;  ">
+     
+  </div>
+    <div class="collapse navbar-collapse" id="myNavbar" style="font-size:17px;padding-top:20px;">
+      <ul class="nav navbar-nav">
+        <li class="active" style=" background-color:black;display:block; margin:1px; "><a href="#">Home</a></li>
+        <li class="dropdown" style=" background-color:black;display:block; margin:1px; ">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#" style=" background-color:black;display:block;">Team<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li style=" background-color:black;display:block; margin:1px; border: 1px solid grey; border-radius:5px;"><a href="playerathy.html">Students</a></li>
+            <li style=" background-color:black;display:block; margin:1px; border: 1px solid grey; border-radius:5px;"><a href="athycoach.html">Coaches</a></li>
+            <li style=" background-color:black;display:block; margin:1px; border: 1px solid grey; border-radius:5px;"><a href="#">Faculty</a></li>
+          </ul>
+        </li>
+        <li style=" background-color:black;display:block; margin:1px;"><a href="our_team.html">About</a></li>
+        <li style=" background-color:black;display:block; margin:1px;"><a href="#">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li style=" background-color:navy;display:block; margin:1px; border: 2px solid blue; border-radius:5px;"><a href="login.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container-fluid" style="margin-top:180px">
+  <div class="container1">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="http://bsa-iitd.in/static/headers_and_logos/ATHLETICS.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+    <img src="http://bsa-iitd.in/static/MainSite/img_slideshow/002.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="http://bsa-iitd.in/static/MainSite/img_slideshow/009.jpg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="http://bsa-iitd.in/static/headers_and_logos/main_page_anim.gif" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="http://bsa-iitd.in/static/headers_and_logos/inter_iit.jpg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="https://scontent.fjai2-1.fna.fbcdn.net/v/t31.0-0/p640x640/17973492_1481035585294649_4925917645009601804_o.jpg?_nc_cat=107&_nc_sid=dd9801&_nc_ohc=bKef_E1rE80AX-TdKyV&_nc_ht=scontent.fjai2-1.fna&_nc_tp=6&oh=0f3b56680db24b2138aa5f294a243ea1&oe=5EE503C1" style="width:100%">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  
+
+
+<div class="container-fluid text-center" style="margin-top:15px;">    
+  <div class="row content">
+    <div class="col-sm-2 sidenav" style=" background-color:white;">
+	<h3 Style="color:black"><i><b>Important Links</b></i></h3><hr />
+      <p style="dispaly: block; background-color:red; color:black; font-size:15px;"><a href="#">BSA IIT Delhi</a></p>
+      <p style="dispaly: block; background-color:red; color:black; font-size:15px;"><a href="#">Inter IIT</a></p>
+      <p style="dispaly: block; background-color:red; color:black; font-size:15px;"><a href="#">Inter-Hostel</a></p>
+	  <p style="dispaly: block; background-color:red; color:black; font-size:15px;"><a href="#">Sportech</a></p>
+	  <p style="dispaly: block; background-color:red; color:black; font-size:15px;"><a href="#">Results</a></p>
+	  <p style="dispaly: block; background-color:red; color:black; font-size:15px;"><a href="#">Celebrations</a></p>
+	  <p style="dispaly: block; background-color:red; color:black; font-size:15px;"><a href="#">Practice-Sessions</a></p>
+	  <p style="dispaly: block; background-color:red; color:black; font-size:15px;"><a href="#">Alumini</a></p>
+	  
+    </div>
+    <div class="col-sm-8 text-center"> 
+      <h1><b>Welcome</b></h1> <hr />
+      <p style="font-size:20px">Sport is where an entire life can be compressed into a few hours, where the emotions of a lifetime can be felt on an acre or two of ground.
+	  We turn novices into champions here at IIT Delhi grounds. The best facilities provided by us have lead to great results and our presence is now being felt in the Delhi circles as well as in the inter college meets outside. As an organisation we are a group of around 300 people including players, coaches, trainers and administrative staff who are working to take our sporting standards at par with the best in the business. Apart from being the apex body for sports in IITD, we are involved in a number of social events, informal events, hosting of sports tournaments and other collaborations and therefore the number of people involved with Athletics IITD is huge.</p>
+      <hr>
+    
+    </div>
+    <div class="col-sm-2 sidenav">
+	
+	<div class="microsoft scrollhead" style="background-color:#115588">
+<h4> <font color="white"> Announcements </font> </h4>
+</div>
+<div class="microsoft scrollcustom shadow" style="border-top:1px solid #cccccc;background-color:lightblue">
+<p class="marquee">
+	<font color="black">
+    <ul class="marquee">
+            <li class="marquee"> Suspension of practice-sessions due to COVID-19 outbreak</li>
+        
+            <li class="marquee"> Players are requested to follow go-speed home workout sessions </li>
+    </ul>
+	</font>
+</p>
+</div>
+	
+	
+	
+      <div class="well">
+        <p>Training for better tomorrow</p>
+      </div>
+      <div class="well">
+        <p><i>"Only disciplined ones in life are free." <Eliud Kipchoge></i></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="bgimg-1">
+  <div class="caption">
+  <span class="border">Athletics IIT Delhi </span>
+  </div>
+</div>
+
+<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+  <h3 style="text-align:center;"></h3>
+  <p>Parallax scrolling is a web site trend where the background content is moved at a different speed than the foreground content while scrolling. Nascetur per nec posuere turpis, lectus nec libero turpis nunc at, sed posuere mollis ullamcorper libero ante lectus, blandit pellentesque a, magna turpis est sapien duis blandit dignissim. Viverra interdum mi magna mi, morbi sociis. Condimentum dui ipsum consequat morbi, curabitur aliquam pede, nullam vitae eu placerat eget et vehicula. Varius quisque non molestie dolor, nunc nisl dapibus vestibulum at, sodales tincidunt mauris ullamcorper, dapibus pulvinar, in in neque risus odio. Accumsan fringilla vulputate at quibusdam sociis eleifend, aenean maecenas vulputate, non id vehicula lorem mattis, ratione interdum sociis ornare. Suscipit proin magna cras vel, non sit platea sit, maecenas ante augue etiam maecenas, porta porttitor placerat leo.</p>
+</div>
+
+<div class="bgimg-2">
+  <div class="caption">
+  <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">LESS HEIGHT</span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+  <p>Scroll up and down to really get the feeling of how Parallax Scrolling works.</p>
+  </div>
+</div>
+
+<div class="bgimg-3">
+  <div class="caption">
+  <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">SCROLL UP</span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+  <p>Scroll up and down to really get the feeling of how Parallax Scrolling works.</p>
+  </div>
+</div>
+
+<div class="bgimg-1">
+  <div class="caption">
+  <span class="border">COOL!</span>
+  </div>
+</div>
+
+
+<footer class="container-fluid text-center">
+  <p> <span style="font-size:20px;">Follow us on </span>
+  <div style="margin: 24px 0;">
+    <a href="#"><i class="fa fa-dribbble" style="font-size:30px;"></i></a> 
+    <a href="#"><i class="fa fa-twitter" style="font-size:30px;"></i></a>  
+    <a href="#"><i class="fa fa-linkedin" style="font-size:30px;"></i></a>  
+    <a href="https://www.facebook.com/Athletics-IIT-Delhi-1552703724944013/"><i class="fa fa-facebook" style="font-size:25px;"></i></a> 
+  </div>
+  @copyright reserverd Athletics IIT Delhi 
+  </div>
+  </p>
+  
+</footer>
+<div style="padding-left:70%;">
+<p>Site mantain and developed by Rakesh Untwal</p>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+    
+</body>
+</html>
